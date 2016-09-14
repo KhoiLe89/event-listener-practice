@@ -1,5 +1,6 @@
-div.onclick(changeBackgroundColorToBlue());
-div.onclick(changeBackgroundColorToWhite());
+var div = $("div")
+div.on("mouseover", changeBackgroundColorToBlue);
+div.on("mouseleave",changeBackgroundColorToWhite);
 
 function changeBackgroundColorToBlue(){
   // No need to change the content of this function. Don't worry if this code is new to you.
